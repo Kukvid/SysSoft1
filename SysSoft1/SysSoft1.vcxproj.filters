@@ -33,7 +33,7 @@
     <None Include="grammar\lexer.l">
       <Filter>grammar</Filter>
     </None>
-    <None Include="..\full_test.dgml">
+    <None Include="tests\full_test.dgml">
       <Filter>filter</Filter>
     </None>
   </ItemGroup>

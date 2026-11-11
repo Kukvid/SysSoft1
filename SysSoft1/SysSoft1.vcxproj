@@ -65,7 +65,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <ConfigurationType>Makefile</ConfigurationType>
     <RemoteCopyIncludeDirectories>$(ProjectDir)include;$(ProjectDir)build;%(AdditionalIncludeDirectories)</RemoteCopyIncludeDirectories>
-    <RemoteProjectRelDir>.</RemoteProjectRelDir>
+    <RemoteProjectRelDir>SysSoft1</RemoteProjectRelDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -111,10 +111,10 @@
     <ClInclude Include="include\parser.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\full_test.dgml" />
     <None Include="grammar\grammar.y" />
     <None Include="grammar\lexer.l" />
     <None Include="Makefile" />
+    <None Include="tests\full_test.dgml" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="tests\full_test.txt" />
