@@ -1,0 +1,185 @@
+def empty()
+end
+
+def no_types(first, second)
+    first;
+    second;
+end
+
+def typed(a of int, b, c of string) of bool
+    true;
+end
+
+def all_types(
+    a of bool,
+    b of byte,
+    c of int,
+    d of uint,
+    e of long,
+    f of ulong,
+    g of char,
+    h of string,
+    custom of MyType,
+    array1 of int array[10],
+    array2 of MyType array[5],
+    matrix of int array[3] array[4]
+) of bool array[2]
+    true;
+end
+
+def literals()
+    true;
+    false;
+    "Hello10";
+    "Escaped: \"quote\" and \\slash";
+    'A';
+    '0';
+    0xFF;
+    0X1a;
+    0b1010;
+    0B0101;
+    0;
+    12345;
+    x = geeredfsafd2(1,2,3) = y+z;
+    x123 = a + b * c + d;
+    x124 = a * b + c * d;
+end
+
+def expressions(a of int, b of int, c of int)
+    a;
+    42;
+    a + b;
+    a - b;
+    a * b;
+    a / b;
+    a % b;
+    a = b;
+    a = b + c * 2;
+    a = (b + car) * 2;
+    a == b;
+    a != b;
+    a < b;
+    a > b;
+    a <= b;
+    a >= b;
+    a && b;
+    a || b;
+    a & b;
+    a | b;
+    a ^ b;
+    a << 2;
+    a >> 1;
+    -a;
+    !a;
+    ~a;
+    (a);
+    ((a + beta));
+end
+
+def calls()
+    empty();
+    no_types(1, 2);
+    typed(1, 2, "text");
+    sum(1 + 2, 3 * 4);
+    outer(inner(1), inner(2));
+    get_function()(1);
+end
+
+def slices(data of int array[10])
+    data[0];
+    data[1..5];
+    data[2, 4, 6];
+    data[1..3, 5..7];
+    data[0, 2..4, 7];
+    data[1 + 2];
+    data[1 + 2..8 - 1];
+    get_array()[0];
+end
+
+def conditions(a of int, b of int)
+    if a > b then a = b;
+
+    if a > b then a = 1; else a = 2;
+
+    if a > 0 then
+        if b > 0 then a = a + b;
+        else a = a - b;
+
+    if true then begin
+        a = 10;
+        b = 20;
+    end else {
+        a = 0;
+        b = 0;
+    }
+end
+
+def loops(a of int)
+    while a > 0
+        a = a - 1;
+    end
+
+    until a == 10
+        a = a + 1;
+    end
+
+    while a > 0
+        if a == 5 then break;
+        a = a - 1;
+    end
+
+    while false
+    end
+
+    until true
+    end
+end
+
+def repetitions(a of int)
+    a = a + 1; while a < 10;
+    a = a - 1; until a == 0;
+    break; until true;
+end
+
+def blocks(a of int)
+    begin
+    end
+
+    {
+    }
+
+    begin
+        a = 10;
+        {
+            a = a + 1;
+        }
+    end
+
+    {
+        def nested(x of int) of int
+            x + 1;
+        end
+
+        nested(a);
+    }
+end
+
+def combined(data of int array[10], n of int)
+    begin
+        def helper(x of int) of int
+            x * 2;
+        end
+
+        while n > 0
+            if n == 5 then break;
+            data[n] = helper(n);
+            n = n - 1;
+        end
+
+        until n == 10
+            n = n + 1;
+        end
+
+        data[0..n];
+    end
+end

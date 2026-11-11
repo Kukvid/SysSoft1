@@ -1,0 +1,2 @@
+﻿// перенести файл из qemu в windows
+scp -P 5555 user@localhost:/home/user/projects/SysSoft1/build/full_test.dgml "C:\Users\Daniil\source\repos\SysSoft1"

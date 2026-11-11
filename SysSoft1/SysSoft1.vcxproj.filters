@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="filter">
+      <UniqueIdentifier>{da35bc98-3e2d-4f6d-9c7a-2bc2950e06b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{04f25f5d-2e51-4cea-94e2-8e71c42f2336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="grammar">
+      <UniqueIdentifier>{c2eece1e-fa04-4fef-a5f0-2f3ea12e3121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{4c133ba5-ae82-4962-be97-d0646badc760}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ast.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dgml.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="grammar\grammar.y">
+      <Filter>grammar</Filter>
+    </None>
+    <None Include="grammar\lexer.l">
+      <Filter>grammar</Filter>
+    </None>
+    <None Include="..\full_test.dgml">
+      <Filter>filter</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\parser.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dgml.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tests\full_test.txt">
+      <Filter>filter</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="help.txt" />
+  </ItemGroup>
+</Project>
