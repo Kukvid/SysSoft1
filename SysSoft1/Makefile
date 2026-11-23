@@ -1,29 +1,40 @@
+
 CC = gcc
-BISON = bison
-FLEX = flex
 
-CFLAGS = -std=c11 -Wall -Wextra -g -Iinclude -Ibuild
+CFLAGS ?= -std=c11 -Wall -Wextra -g
+CPPFLAGS = -Iinclude -Ibuild
 
-TARGET = build/spo-parser
+PARSER_TARGET = build/spo-parser
+CFG_TARGET = build/spo-cfg
 
-.PHONY: all test clean
+GENERATED = build/grammar.tab.c build/grammar.tab.h build/lex.yy.c build/lex.yy.h
 
-all: $(TARGET)
+COMMON = src/ast.c src/parser.c build/grammar.tab.c build/lex.yy.c
+
+.PHONY: all clean test cfg-test
+
+all: $(PARSER_TARGET) $(CFG_TARGET)
 
 build:
 	mkdir -p build
 
-build/grammar.tab.c build/grammar.tab.h &: grammar/grammar.y include/ast.h | build
-	$(BISON) -d -o build/grammar.tab.c grammar/grammar.y
+build/grammar.tab.c build/grammar.tab.h &: grammar/grammar.y | build
+	bison -d -o build/grammar.tab.c grammar/grammar.y
 
-build/lex.yy.c: grammar/lexer.l build/grammar.tab.h | build
-	$(FLEX) -o build/lex.yy.c grammar/lexer.l
+build/lex.yy.c build/lex.yy.h &: grammar/lexer.l build/grammar.tab.h | build
+	flex -o build/lex.yy.c grammar/lexer.l
 
-$(TARGET): Main.c src/ast.c src/parser.c src/dgml.c build/grammar.tab.c build/lex.yy.c include/ast.h include/parser.h include/dgml.h build/lex.yy.h
-	$(CC) $(CFLAGS) Main.c src/ast.c src/parser.c src/dgml.c build/grammar.tab.c build/lex.yy.c -o $@
+$(PARSER_TARGET): Main.c src/ast.c src/parser.c src/dgml.c include/ast.h include/parser.h include/dgml.h $(GENERATED)
+	$(CC) $(CFLAGS) $(CPPFLAGS) Main.c src/ast.c src/parser.c src/dgml.c build/grammar.tab.c build/lex.yy.c -o $@
 
-test: all
-	./$(TARGET) tests/full_test.txt build/full_test.dgml
+$(CFG_TARGET): CfgMain.c $(COMMON) src/analysis.c src/opstree.c src/cfg.c src/cfg_dgml.c include/analysis.h include/opstree.h include/cfg.h include/cfg_dgml.h $(GENERATED)
+	$(CC) $(CFLAGS) $(CPPFLAGS) CfgMain.c $(COMMON) src/analysis.c src/opstree.c src/cfg.c src/cfg_dgml.c -o $@
+
+test: $(PARSER_TARGET)
+	./$(PARSER_TARGET) tests/full_test.txt build/full_test.dgml
+
+cfg-test: $(CFG_TARGET)
+	./$(CFG_TARGET) -o build/cfg-output tests/full_test.txt
 
 clean:
 	rm -rf build

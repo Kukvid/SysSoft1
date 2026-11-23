@@ -42,6 +42,9 @@ typedef struct AstNode {
 
     struct AstNode** children;
     size_t child_count;
+
+    size_t line;
+    size_t column;
 } AstNode;
 
 AstNode* ast_create(AstNodeType type, const char* value);

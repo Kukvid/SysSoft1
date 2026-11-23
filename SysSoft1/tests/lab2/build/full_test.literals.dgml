@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Category="BasicBlock" Bounds="0,672,71.5533333333333,25.96" Label="ENTRY B0" />
+    <Node Id="b1" Category="BasicBlock" Bounds="189.918333333333,1120,59.2633333333333,25.96" Label="EXIT B1" />
+    <Node Id="o0" Category="Operation" Bounds="180.641666666667,1064,77.8166666666667,25.96" Label="BOOL: true" />
+    <Node Id="o1" Category="Operation" Bounds="179.225,1008,80.65,25.96" Label="BOOL: false" />
+    <Node Id="o10" Category="Operation" Bounds="192.415,504,54.27,25.96" Label="DEC: 0" />
+    <Node Id="o11" Category="Operation" Bounds="179.475,448,80.1500000000001,25.96" Label="DEC: 12345" />
+    <Node Id="o12" Category="Operation" Bounds="182.315,392,74.47,25.96" Label="BINARY: =" />
+    <Node Id="o13" Category="Operation" Bounds="377.251666666667,448,124.743333333333,25.96" Label="IDENTIFIER: x [f4:s0]" />
+    <Node Id="o14" Category="Operation" Bounds="402.388333333333,392,74.47,25.96" Label="BINARY: =" />
+    <Node Id="o15" Category="Operation" Bounds="579.851666666667,504,50,25.96" Label="CALL" />
+    <Node Id="o16" Category="Operation" Bounds="698.003333333334,616,153.706666666667,25.96" Label="IDENTIFIER: geeredfsafd2" />
+    <Node Id="o17" Category="Operation" Bounds="747.721666666667,560,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o18" Category="Operation" Bounds="747.721666666667,504,54.27,25.96" Label="DEC: 2" />
+    <Node Id="o19" Category="Operation" Bounds="747.721666666667,448,54.27,25.96" Label="DEC: 3" />
+    <Node Id="o2" Category="Operation" Bounds="161.49,952,116.12,25.96" Label="STRING: &quot;Hello10&quot;" />
+    <Node Id="o20" Category="Operation" Bounds="567.616666666667,392,74.47,25.96" Label="BINARY: +" />
+    <Node Id="o21" Category="Operation" Bounds="712.335,392,125.043333333333,25.96" Label="IDENTIFIER: y [f4:s1]" />
+    <Node Id="o22" Category="Operation" Bounds="712.525,336,124.663333333333,25.96" Label="IDENTIFIER: z [f4:s2]" />
+    <Node Id="o23" Category="Operation" Bounds="182.315,336,74.47,25.96" Label="BINARY: =" />
+    <Node Id="o24" Category="Operation" Bounds="367.546666666667,336,144.153333333333,25.96" Label="IDENTIFIER: x123 [f4:s3]" />
+    <Node Id="o25" Category="Operation" Bounds="402.388333333333,280,74.47,25.96" Label="BINARY: +" />
+    <Node Id="o26" Category="Operation" Bounds="567.616666666667,280,74.47,25.96" Label="BINARY: +" />
+    <Node Id="o27" Category="Operation" Bounds="712.185,280,125.343333333333,25.96" Label="IDENTIFIER: a [f4:s4]" />
+    <Node Id="o28" Category="Operation" Bounds="739.225,224,71.2633333333333,25.96" Label="BINARY: *" />
+    <Node Id="o29" Category="Operation" Bounds="881.71,224,126.29,25.96" Label="IDENTIFIER: b [f4:s5]" />
+    <Node Id="o3" Category="Operation" Bounds="101.553333333333,896,235.993333333333,25.96" Label="STRING: &quot;Escaped: \&quot;quote\&quot; and \\slash&quot;" />
+    <Node Id="o30" Category="Operation" Bounds="882.465,168,124.78,25.96" Label="IDENTIFIER: c [f4:s6]" />
+    <Node Id="o31" Category="Operation" Bounds="541.7,224,126.303333333333,25.96" Label="IDENTIFIER: d [f4:s7]" />
+    <Node Id="o32" Category="Operation" Bounds="182.315,224,74.47,25.96" Label="BINARY: =" />
+    <Node Id="o33" Category="Operation" Bounds="367.546666666667,224,144.153333333333,25.96" Label="IDENTIFIER: x124 [f4:s8]" />
+    <Node Id="o34" Category="Operation" Bounds="402.388333333334,168,74.4699999999998,25.96" Label="BINARY: +" />
+    <Node Id="o35" Category="Operation" Bounds="569.22,168,71.2633333333333,25.96" Label="BINARY: *" />
+    <Node Id="o36" Category="Operation" Bounds="712.185,168,125.343333333333,25.96" Label="IDENTIFIER: a [f4:s4]" />
+    <Node Id="o37" Category="Operation" Bounds="711.711666666667,112,126.29,25.96" Label="IDENTIFIER: b [f4:s5]" />
+    <Node Id="o38" Category="Operation" Bounds="569.22,56.0000000000001,71.2633333333333,25.96" Label="BINARY: *" />
+    <Node Id="o39" Category="Operation" Bounds="712.466666666667,56.0000000000001,124.78,25.96" Label="IDENTIFIER: c [f4:s6]" />
+    <Node Id="o4" Category="Operation" Bounds="184.543333333333,840,70.0133333333333,25.96" Label="CHAR: 'A'" />
+    <Node Id="o40" Category="Operation" Bounds="711.705,8.5265128291212E-14,126.303333333333,25.96" Label="IDENTIFIER: d [f4:s7]" />
+    <Node Id="o5" Category="Operation" Bounds="185.178333333333,784,68.7433333333333,25.96" Label="CHAR: '0'" />
+    <Node Id="o6" Category="Operation" Bounds="183.925,728,71.25,25.96" Label="HEX: 0xFF" />
+    <Node Id="o7" Category="Operation" Bounds="182.711666666666,672,73.6766666666667,25.96" Label="HEX: 0X1a" />
+    <Node Id="o8" Category="Operation" Bounds="175.655,616,87.79,25.96" Label="BITS: 0b1010" />
+    <Node Id="o9" Category="Operation" Bounds="175.741666666666,560,87.6166666666668,25.96" Label="BITS: 0B0101" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b1" Category="Control" Bounds="38.5554466247559,697.960021972656,158.514942169189,416.276428222656" />
+    <Link Source="b0" Target="o0" Category="Contains" Bounds="38.8709983825684,697.960021972656,157.440601348877,360.415100097656" />
+    <Link Source="b0" Target="o1" Category="Contains" Bounds="38.8697624206543,697.960021972656,150.293018341064,305.555297851563" />
+    <Link Source="b0" Target="o10" Category="Contains" Bounds="49.9753456115723,536.032531738281,148.733333587646,135.967468261719" />
+    <Link Source="b0" Target="o11" Category="Contains" Bounds="46.4256744384766,480.917999267578,156.766860961914,191.082000732422" />
+    <Link Source="b0" Target="o12" Category="Contains" Bounds="42.897518157959,423.258636474609,151.556354522705,248.741363525391" />
+    <Link Source="b0" Target="o2" Category="Contains" Bounds="38.8686676025391,697.960021972656,127.993438720703,251.496398925781" />
+    <Link Source="b0" Target="o23" Category="Contains" Bounds="41.5825119018555,367.268981933594,152.927833557129,304.731018066406" />
+    <Link Source="b0" Target="o3" Category="Contains" Bounds="46.275520324707,697.960021972656,156.06763458252,191.251403808594" />
+    <Link Source="b0" Target="o32" Category="Contains" Bounds="41.1011695861816,258.286651611328,169.708660125732,413.713348388672" />
+    <Link Source="b0" Target="o4" Category="Contains" Bounds="49.9753456115723,697.960021972656,148.733333587646,135.967468261719" />
+    <Link Source="b0" Target="o5" Category="Contains" Bounds="57.0746841430664,697.960021972656,133.492073059082,81.3562622070313" />
+    <Link Source="b0" Target="o6" Category="Contains" Bounds="71.4208679199219,695.841613769531,104.014755249023,31.6957397460938" />
+    <Link Source="b0" Target="o7" Category="Contains" Bounds="71.553337097168,684.97998046875,102.158332824707,0" />
+    <Link Source="b0" Target="o8" Category="Contains" Bounds="71.4208679199219,644.388916015625,97.5622863769531,29.7294921875" />
+    <Link Source="b0" Target="o9" Category="Contains" Bounds="57.0746841430664,590.643737792969,133.492073059082,81.3562622070313" />
+    <Link Source="o12" Target="o13" Category="Operand" Bounds="256.785003662109,414.454833984375,123.106414794922,31.3257446289063" />
+    <Link Source="o12" Target="o14" Category="Operand" Bounds="256.785003662109,404.980010986328,136.603332519531,0" />
+    <Link Source="o14" Target="o15" Category="Operand" Bounds="459.268096923828,417.959991455078,119.315216064453,80.9366760253906" />
+    <Link Source="o14" Target="o20" Category="Operand" Bounds="476.858337402344,404.980010986328,81.75830078125,0" />
+    <Link Source="o15" Target="o16" Category="Operand" Bounds="624.554016113281,529.960021972656,123.084655761719,81.0886840820313" />
+    <Link Source="o15" Target="o17" Category="Operand" Bounds="629.851684570313,525.215026855469,109.32177734375,36.0108642578125" />
+    <Link Source="o15" Target="o18" Category="Operand" Bounds="629.851684570313,516.97998046875,108.869995117188,0" />
+    <Link Source="o15" Target="o19" Category="Operand" Bounds="629.851684570313,472.734100341797,109.32177734375,36.0108337402344" />
+    <Link Source="o20" Target="o21" Category="Operand" Bounds="642.086669921875,404.980010986328,61.2483520507813,0" />
+    <Link Source="o20" Target="o22" Category="Operand" Bounds="641.299255371094,364.775787353516,85.6044921875,28.1983032226563" />
+    <Link Source="o23" Target="o24" Category="Operand" Bounds="256.785003662109,348.980010986328,101.761657714844,0" />
+    <Link Source="o23" Target="o25" Category="Operand" Bounds="256.785003662109,304.674255371094,136.881286621094,34.8309020996094" />
+    <Link Source="o25" Target="o26" Category="Operand" Bounds="476.858337402344,292.980010986328,81.75830078125,0" />
+    <Link Source="o25" Target="o31" Category="Operand" Bounds="475.804809570313,252.848907470703,82.2255249023438,27.8682861328125" />
+    <Link Source="o26" Target="o27" Category="Operand" Bounds="642.086669921875,292.980010986328,61.0983276367188,0" />
+    <Link Source="o26" Target="o28" Category="Operand" Bounds="641.299255371094,251.379821777344,89.8424072265625,29.5942687988281" />
+    <Link Source="o28" Target="o29" Category="Operand" Bounds="810.488342285156,236.979995727539,62.2216796875,0" />
+    <Link Source="o28" Target="o30" Category="Operand" Bounds="810.023254394531,196.775894165039,86.8804321289063,28.6197052001953" />
+    <Link Source="o32" Target="o33" Category="Operand" Bounds="256.785003662109,236.979995727539,101.761657714844,0" />
+    <Link Source="o32" Target="o34" Category="Operand" Bounds="256.785003662109,192.674255371094,136.881286621094,34.8309020996094" />
+    <Link Source="o34" Target="o35" Category="Operand" Bounds="476.858337402344,180.979995727539,83.3616333007813,0" />
+    <Link Source="o34" Target="o38" Category="Operand" Bounds="458.772125244141,87.0098342895508,119.480987548828,80.9901657104492" />
+    <Link Source="o35" Target="o36" Category="Operand" Bounds="640.483337402344,180.979995727539,62.70166015625,0" />
+    <Link Source="o35" Target="o37" Category="Operand" Bounds="640.018493652344,140.775787353516,86.88525390625,28.6201782226563" />
+    <Link Source="o38" Target="o39" Category="Operand" Bounds="640.483337402344,68.9800033569336,62.9833374023438,0" />
+    <Link Source="o38" Target="o40" Category="Operand" Bounds="640.018493652344,28.7757873535156,86.88525390625,28.6201820373535" />
+  </Links>
+  <Categories>
+    <Category Id="BasicBlock" />
+    <Category Id="Contains" Label="Содержит" Description="Указывает, содержит ли источник связи целевой объект" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Содержится в" IsContainment="True" OutgoingActionLabel="Содержит" />
+    <Category Id="Control" />
+    <Category Id="Operand" />
+    <Category Id="Operation" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

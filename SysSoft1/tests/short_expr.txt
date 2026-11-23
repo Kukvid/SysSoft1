@@ -1,0 +1,9 @@
+def helper()
+    true;
+end
+
+def main()
+    x = false && helper();
+    y = true || helper();
+    z = (false || helper()) + 1;
+end

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Label="ENTRY B0" Category="BasicBlock" />
+    <Node Id="b1" Label="EXIT B1" Category="BasicBlock" />
+    <Node Id="o0" Label="BOOL: true" Category="Operation" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b1" Category="Control" />
+    <Link Source="b0" Target="o0" Category="Contains" />
+  </Links>
+</DirectedGraph>

@@ -72,6 +72,7 @@ static int append_node(AstNode* parent, AstNode* child);
 
 %token DEF END OF ARRAY
 %token IF THEN ELSE
+%token WHILE UNTIL
 %token BREAK BEGIN_KW
 %token EQ NE LE GE AND OR SHL SHR DOTDOT
 
@@ -105,8 +106,6 @@ static int append_node(AstNode* parent, AstNode* child);
 %precedence '!' '~'
 %precedence NO_ELSE
 %precedence ELSE
-%precedence WHILE UNTIL
-%precedence POSTFIX
 
 %%
 

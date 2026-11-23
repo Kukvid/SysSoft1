@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Label="ENTRY B0" Category="BasicBlock" />
+    <Node Id="b1" Label="EXIT B1" Category="BasicBlock" />
+    <Node Id="o0" Label="BINARY: =" Category="Operation" />
+    <Node Id="o1" Label="IDENTIFIER: a [f11:s0]" Category="Operation" />
+    <Node Id="o2" Label="DEC: 10" Category="Operation" />
+    <Node Id="o3" Label="BINARY: =" Category="Operation" />
+    <Node Id="o4" Label="IDENTIFIER: a [f11:s0]" Category="Operation" />
+    <Node Id="o5" Label="BINARY: +" Category="Operation" />
+    <Node Id="o6" Label="IDENTIFIER: a [f11:s0]" Category="Operation" />
+    <Node Id="o7" Label="DEC: 1" Category="Operation" />
+    <Node Id="o8" Label="CALL" Category="Operation" />
+    <Node Id="o9" Label="IDENTIFIER: nested" Category="Operation" />
+    <Node Id="o10" Label="IDENTIFIER: a [f11:s0]" Category="Operation" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b1" Category="Control" />
+    <Link Source="b0" Target="o0" Category="Contains" />
+    <Link Source="o0" Target="o1" Category="Operand" />
+    <Link Source="o0" Target="o2" Category="Operand" />
+    <Link Source="b0" Target="o3" Category="Contains" />
+    <Link Source="o3" Target="o4" Category="Operand" />
+    <Link Source="o3" Target="o5" Category="Operand" />
+    <Link Source="o5" Target="o6" Category="Operand" />
+    <Link Source="o5" Target="o7" Category="Operand" />
+    <Link Source="b0" Target="o8" Category="Contains" />
+    <Link Source="o8" Target="o9" Category="Operand" />
+    <Link Source="o8" Target="o10" Category="Operand" />
+  </Links>
+</DirectedGraph>

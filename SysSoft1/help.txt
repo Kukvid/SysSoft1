@@ -1,2 +1,7 @@
 ﻿// перенести файл из qemu в windows
 scp -P 5555 user@localhost:/home/user/projects/SysSoft1/build/full_test.dgml "C:\Users\Daniil\source\repos\SysSoft1\SysSoft1\tests"
+
+// перенести cfg из qemu
+scp -P 5555 user@localhost:/home/user/projects/SysSoft1/build/cfg-output/*.dgml "C:\Users\Daniil\source\repos\SysSoft1\SysSoft1\tests"
+
+// scp -P 5555 "user@localhost:/home/user/projects/SysSoft1/build/cfg-defense/*.dgml" "C:\Users\Daniil\source\repos\SysSoft1\SysSoft1\tests\lab2\build/"

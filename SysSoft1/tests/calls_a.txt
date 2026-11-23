@@ -1,0 +1,7 @@
+def main()
+    helper();
+end
+
+def helper()
+    1;
+end

@@ -93,21 +93,30 @@
     </CleanCommandLine>
     <LocalBuildOutputs>
     </LocalBuildOutputs>
-    <RemoteBuildOutputs>/home/user/projects/SysSoft1/build/spo-parser</RemoteBuildOutputs>
-    <RemoteBuildCommandLine>make</RemoteBuildCommandLine>
-    <RemoteReBuildCommandLine>make clean &amp;&amp; make</RemoteReBuildCommandLine>
+    <RemoteBuildOutputs>/home/user/projects/SysSoft1/build/spo-cfg</RemoteBuildOutputs>
+    <RemoteBuildCommandLine>make -C /home/user/projects/SysSoft1 &amp;&amp; make -C /home/user/projects/SysSoft1 cfg-test</RemoteBuildCommandLine>
+    <RemoteReBuildCommandLine>make -C /home/user/projects/SysSoft1 clean &amp;&amp; make -C /home/user/projects/SysSoft1 &amp;&amp; make -C /home/user/projects/SysSoft1 cfg-test</RemoteReBuildCommandLine>
     <RemoteCleanCommandLine>make clean</RemoteCleanCommandLine>
     <NMakeIncludeSearchPath>$(ProjectDir)include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="CfgMain.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="src\analysis.c" />
     <ClCompile Include="src\ast.c" />
+    <ClCompile Include="src\cfg.c" />
+    <ClCompile Include="src\cfg_dgml.c" />
     <ClCompile Include="src\dgml.c" />
+    <ClCompile Include="src\opstree.c" />
     <ClCompile Include="src\parser.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\analysis.h" />
     <ClInclude Include="include\ast.h" />
+    <ClInclude Include="include\cfg.h" />
+    <ClInclude Include="include\cfg_dgml.h" />
     <ClInclude Include="include\dgml.h" />
+    <ClInclude Include="include\opstree.h" />
     <ClInclude Include="include\parser.h" />
   </ItemGroup>
   <ItemGroup>
@@ -115,9 +124,41 @@
     <None Include="grammar\lexer.l" />
     <None Include="Makefile" />
     <None Include="tests\full_test.dgml" />
+    <None Include="tests\lab2\build\callgraph.dgml" />
+    <None Include="tests\lab2\build\file1.main.dgml" />
+    <None Include="tests\lab2\build\file2.helper.dgml" />
+    <None Include="tests\lab2\build\full_test.all_types.dgml" />
+    <None Include="tests\lab2\build\full_test.blocks.dgml" />
+    <None Include="tests\lab2\build\full_test.calls.dgml" />
+    <None Include="tests\lab2\build\full_test.combined.dgml" />
+    <None Include="tests\lab2\build\full_test.conditions.dgml" />
+    <None Include="tests\lab2\build\full_test.empty.dgml" />
+    <None Include="tests\lab2\build\full_test.expressions.dgml" />
+    <None Include="tests\lab2\build\full_test.helper.dgml" />
+    <None Include="tests\lab2\build\full_test.literals.dgml" />
+    <None Include="tests\lab2\build\full_test.loops.dgml" />
+    <None Include="tests\lab2\build\full_test.nested.dgml" />
+    <None Include="tests\lab2\build\full_test.no_types.dgml" />
+    <None Include="tests\lab2\build\full_test.repetitions.dgml" />
+    <None Include="tests\lab2\build\full_test.slices.dgml" />
+    <None Include="tests\lab2\build\full_test.typed.dgml" />
+    <None Include="tests\lab2\build\test_branches.main.dgml" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="tests\break_error.txt" />
+    <Text Include="tests\calls_a.txt" />
+    <Text Include="tests\calls_b.txt" />
+    <Text Include="tests\file1.txt" />
+    <Text Include="tests\file2.txt" />
     <Text Include="tests\full_test.txt" />
+    <Text Include="tests\invalid.txt" />
+    <Text Include="tests\location_test.txt" />
+    <Text Include="tests\scopes.txt" />
+    <Text Include="tests\short_circuit.txt" />
+    <Text Include="tests\short_expr.txt" />
+    <Text Include="tests\test_branches.txt" />
+    <Text Include="tests\two_loops.txt" />
+    <Text Include="tests\until.txt" />
   </ItemGroup>
   <ItemGroup>
     <Xsd Include="help.txt">
@@ -131,7 +172,16 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x86'">true</ExcludedFromBuild>
     </Xsd>
   </ItemGroup>
-  <ItemDefinitionGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>

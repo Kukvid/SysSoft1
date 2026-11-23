@@ -1,0 +1,15 @@
+def main()
+    outer = 1;
+
+    begin
+        inner = outer + 1;
+
+        def test()
+            inner;
+        end
+
+        test();
+    end
+
+    inner = 2;
+end

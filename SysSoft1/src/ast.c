@@ -17,6 +17,8 @@ AstNode* ast_create(AstNodeType type, const char* value)
     node->value = NULL;
     node->children = NULL;
     node->child_count = 0;
+    node->line = 0;
+    node->column = 0;
 
     if (value != NULL) {
         size_t length = strlen(value) + 1;

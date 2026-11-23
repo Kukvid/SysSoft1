@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Label="ENTRY B0" Category="BasicBlock" />
+    <Node Id="b1" Label="EXIT B1" Category="BasicBlock" />
+    <Node Id="b2" Label="BLOCK B2" Category="BasicBlock" />
+    <Node Id="b3" Label="BLOCK B3" Category="BasicBlock" />
+    <Node Id="b4" Label="BLOCK B4" Category="BasicBlock" />
+    <Node Id="b5" Label="BLOCK B5" Category="BasicBlock" />
+    <Node Id="b6" Label="BLOCK B6" Category="BasicBlock" />
+    <Node Id="b7" Label="BLOCK B7" Category="BasicBlock" />
+    <Node Id="b8" Label="BLOCK B8" Category="BasicBlock" />
+    <Node Id="b9" Label="BLOCK B9" Category="BasicBlock" />
+    <Node Id="o0" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o1" Label="DEC: 42" Category="Operation" />
+    <Node Id="o2" Label="BINARY: +" Category="Operation" />
+    <Node Id="o3" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o4" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o5" Label="BINARY: -" Category="Operation" />
+    <Node Id="o6" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o7" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o8" Label="BINARY: *" Category="Operation" />
+    <Node Id="o9" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o10" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o11" Label="BINARY: /" Category="Operation" />
+    <Node Id="o12" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o13" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o14" Label="BINARY: %" Category="Operation" />
+    <Node Id="o15" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o16" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o17" Label="BINARY: =" Category="Operation" />
+    <Node Id="o18" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o19" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o20" Label="BINARY: =" Category="Operation" />
+    <Node Id="o21" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o22" Label="BINARY: +" Category="Operation" />
+    <Node Id="o23" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o24" Label="BINARY: *" Category="Operation" />
+    <Node Id="o25" Label="IDENTIFIER: c [f5:s2]" Category="Operation" />
+    <Node Id="o26" Label="DEC: 2" Category="Operation" />
+    <Node Id="o27" Label="BINARY: =" Category="Operation" />
+    <Node Id="o28" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o29" Label="BINARY: *" Category="Operation" />
+    <Node Id="o30" Label="BINARY: +" Category="Operation" />
+    <Node Id="o31" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o32" Label="IDENTIFIER: car [f5:s3]" Category="Operation" />
+    <Node Id="o33" Label="DEC: 2" Category="Operation" />
+    <Node Id="o34" Label="BINARY: ==" Category="Operation" />
+    <Node Id="o35" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o36" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o37" Label="BINARY: !=" Category="Operation" />
+    <Node Id="o38" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o39" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o40" Label="BINARY: &lt;" Category="Operation" />
+    <Node Id="o41" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o42" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o43" Label="BINARY: &gt;" Category="Operation" />
+    <Node Id="o44" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o45" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o46" Label="BINARY: &lt;=" Category="Operation" />
+    <Node Id="o47" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o48" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o49" Label="BINARY: &gt;=" Category="Operation" />
+    <Node Id="o50" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o51" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o52" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o53" Label="BINARY: =" Category="Operation" />
+    <Node Id="o54" Label="IDENTIFIER: @spo_bool_4 [f5:s4]" Category="Operation" />
+    <Node Id="o55" Label="BOOL: true" Category="Operation" />
+    <Node Id="o56" Label="BINARY: =" Category="Operation" />
+    <Node Id="o57" Label="IDENTIFIER: @spo_bool_4 [f5:s4]" Category="Operation" />
+    <Node Id="o58" Label="BOOL: false" Category="Operation" />
+    <Node Id="o59" Label="IDENTIFIER: @spo_bool_4 [f5:s4]" Category="Operation" />
+    <Node Id="o60" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o61" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o62" Label="BINARY: =" Category="Operation" />
+    <Node Id="o63" Label="IDENTIFIER: @spo_bool_5 [f5:s5]" Category="Operation" />
+    <Node Id="o64" Label="BOOL: true" Category="Operation" />
+    <Node Id="o65" Label="BINARY: =" Category="Operation" />
+    <Node Id="o66" Label="IDENTIFIER: @spo_bool_5 [f5:s5]" Category="Operation" />
+    <Node Id="o67" Label="BOOL: false" Category="Operation" />
+    <Node Id="o68" Label="IDENTIFIER: @spo_bool_5 [f5:s5]" Category="Operation" />
+    <Node Id="o69" Label="BINARY: &amp;" Category="Operation" />
+    <Node Id="o70" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o71" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o72" Label="BINARY: |" Category="Operation" />
+    <Node Id="o73" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o74" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o75" Label="BINARY: ^" Category="Operation" />
+    <Node Id="o76" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o77" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+    <Node Id="o78" Label="BINARY: &lt;&lt;" Category="Operation" />
+    <Node Id="o79" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o80" Label="DEC: 2" Category="Operation" />
+    <Node Id="o81" Label="BINARY: &gt;&gt;" Category="Operation" />
+    <Node Id="o82" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o83" Label="DEC: 1" Category="Operation" />
+    <Node Id="o84" Label="UNARY: -" Category="Operation" />
+    <Node Id="o85" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o86" Label="UNARY: !" Category="Operation" />
+    <Node Id="o87" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o88" Label="UNARY: ~" Category="Operation" />
+    <Node Id="o89" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o90" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o91" Label="BINARY: +" Category="Operation" />
+    <Node Id="o92" Label="IDENTIFIER: a [f5:s0]" Category="Operation" />
+    <Node Id="o93" Label="IDENTIFIER: beta [f5:s6]" Category="Operation" />
+    <Node Id="o94" Label="IDENTIFIER: b [f5:s1]" Category="Operation" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b5" Label="True" Category="Control" />
+    <Link Source="b0" Target="b3" Label="False" Category="Control" />
+    <Link Source="b2" Target="b4" Category="Control" />
+    <Link Source="b3" Target="b4" Category="Control" />
+    <Link Source="b4" Target="b6" Label="True" Category="Control" />
+    <Link Source="b4" Target="b9" Label="False" Category="Control" />
+    <Link Source="b5" Target="b2" Label="True" Category="Control" />
+    <Link Source="b5" Target="b3" Label="False" Category="Control" />
+    <Link Source="b6" Target="b8" Category="Control" />
+    <Link Source="b7" Target="b8" Category="Control" />
+    <Link Source="b8" Target="b1" Category="Control" />
+    <Link Source="b9" Target="b6" Label="True" Category="Control" />
+    <Link Source="b9" Target="b7" Label="False" Category="Control" />
+    <Link Source="b0" Target="o0" Category="Contains" />
+    <Link Source="b0" Target="o1" Category="Contains" />
+    <Link Source="b0" Target="o2" Category="Contains" />
+    <Link Source="o2" Target="o3" Category="Operand" />
+    <Link Source="o2" Target="o4" Category="Operand" />
+    <Link Source="b0" Target="o5" Category="Contains" />
+    <Link Source="o5" Target="o6" Category="Operand" />
+    <Link Source="o5" Target="o7" Category="Operand" />
+    <Link Source="b0" Target="o8" Category="Contains" />
+    <Link Source="o8" Target="o9" Category="Operand" />
+    <Link Source="o8" Target="o10" Category="Operand" />
+    <Link Source="b0" Target="o11" Category="Contains" />
+    <Link Source="o11" Target="o12" Category="Operand" />
+    <Link Source="o11" Target="o13" Category="Operand" />
+    <Link Source="b0" Target="o14" Category="Contains" />
+    <Link Source="o14" Target="o15" Category="Operand" />
+    <Link Source="o14" Target="o16" Category="Operand" />
+    <Link Source="b0" Target="o17" Category="Contains" />
+    <Link Source="o17" Target="o18" Category="Operand" />
+    <Link Source="o17" Target="o19" Category="Operand" />
+    <Link Source="b0" Target="o20" Category="Contains" />
+    <Link Source="o20" Target="o21" Category="Operand" />
+    <Link Source="o20" Target="o22" Category="Operand" />
+    <Link Source="o22" Target="o23" Category="Operand" />
+    <Link Source="o22" Target="o24" Category="Operand" />
+    <Link Source="o24" Target="o25" Category="Operand" />
+    <Link Source="o24" Target="o26" Category="Operand" />
+    <Link Source="b0" Target="o27" Category="Contains" />
+    <Link Source="o27" Target="o28" Category="Operand" />
+    <Link Source="o27" Target="o29" Category="Operand" />
+    <Link Source="o29" Target="o30" Category="Operand" />
+    <Link Source="o30" Target="o31" Category="Operand" />
+    <Link Source="o30" Target="o32" Category="Operand" />
+    <Link Source="o29" Target="o33" Category="Operand" />
+    <Link Source="b0" Target="o34" Category="Contains" />
+    <Link Source="o34" Target="o35" Category="Operand" />
+    <Link Source="o34" Target="o36" Category="Operand" />
+    <Link Source="b0" Target="o37" Category="Contains" />
+    <Link Source="o37" Target="o38" Category="Operand" />
+    <Link Source="o37" Target="o39" Category="Operand" />
+    <Link Source="b0" Target="o40" Category="Contains" />
+    <Link Source="o40" Target="o41" Category="Operand" />
+    <Link Source="o40" Target="o42" Category="Operand" />
+    <Link Source="b0" Target="o43" Category="Contains" />
+    <Link Source="o43" Target="o44" Category="Operand" />
+    <Link Source="o43" Target="o45" Category="Operand" />
+    <Link Source="b0" Target="o46" Category="Contains" />
+    <Link Source="o46" Target="o47" Category="Operand" />
+    <Link Source="o46" Target="o48" Category="Operand" />
+    <Link Source="b0" Target="o49" Category="Contains" />
+    <Link Source="o49" Target="o50" Category="Operand" />
+    <Link Source="o49" Target="o51" Category="Operand" />
+    <Link Source="b0" Target="o52" Category="Condition" />
+    <Link Source="b2" Target="o53" Category="Contains" />
+    <Link Source="o53" Target="o54" Category="Operand" />
+    <Link Source="o53" Target="o55" Category="Operand" />
+    <Link Source="b3" Target="o56" Category="Contains" />
+    <Link Source="o56" Target="o57" Category="Operand" />
+    <Link Source="o56" Target="o58" Category="Operand" />
+    <Link Source="b4" Target="o59" Category="Contains" />
+    <Link Source="b4" Target="o60" Category="Condition" />
+    <Link Source="b5" Target="o61" Category="Condition" />
+    <Link Source="b6" Target="o62" Category="Contains" />
+    <Link Source="o62" Target="o63" Category="Operand" />
+    <Link Source="o62" Target="o64" Category="Operand" />
+    <Link Source="b7" Target="o65" Category="Contains" />
+    <Link Source="o65" Target="o66" Category="Operand" />
+    <Link Source="o65" Target="o67" Category="Operand" />
+    <Link Source="b8" Target="o68" Category="Contains" />
+    <Link Source="b8" Target="o69" Category="Contains" />
+    <Link Source="o69" Target="o70" Category="Operand" />
+    <Link Source="o69" Target="o71" Category="Operand" />
+    <Link Source="b8" Target="o72" Category="Contains" />
+    <Link Source="o72" Target="o73" Category="Operand" />
+    <Link Source="o72" Target="o74" Category="Operand" />
+    <Link Source="b8" Target="o75" Category="Contains" />
+    <Link Source="o75" Target="o76" Category="Operand" />
+    <Link Source="o75" Target="o77" Category="Operand" />
+    <Link Source="b8" Target="o78" Category="Contains" />
+    <Link Source="o78" Target="o79" Category="Operand" />
+    <Link Source="o78" Target="o80" Category="Operand" />
+    <Link Source="b8" Target="o81" Category="Contains" />
+    <Link Source="o81" Target="o82" Category="Operand" />
+    <Link Source="o81" Target="o83" Category="Operand" />
+    <Link Source="b8" Target="o84" Category="Contains" />
+    <Link Source="o84" Target="o85" Category="Operand" />
+    <Link Source="b8" Target="o86" Category="Contains" />
+    <Link Source="o86" Target="o87" Category="Operand" />
+    <Link Source="b8" Target="o88" Category="Contains" />
+    <Link Source="o88" Target="o89" Category="Operand" />
+    <Link Source="b8" Target="o90" Category="Contains" />
+    <Link Source="b8" Target="o91" Category="Contains" />
+    <Link Source="o91" Target="o92" Category="Operand" />
+    <Link Source="o91" Target="o93" Category="Operand" />
+    <Link Source="b9" Target="o94" Category="Condition" />
+  </Links>
+</DirectedGraph>

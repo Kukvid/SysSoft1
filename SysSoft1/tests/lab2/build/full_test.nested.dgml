@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Label="ENTRY B0" Category="BasicBlock" />
+    <Node Id="b1" Label="EXIT B1" Category="BasicBlock" />
+    <Node Id="o0" Label="BINARY: +" Category="Operation" />
+    <Node Id="o1" Label="IDENTIFIER: x [f12:s0]" Category="Operation" />
+    <Node Id="o2" Label="DEC: 1" Category="Operation" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b1" Category="Control" />
+    <Link Source="b0" Target="o0" Category="Contains" />
+    <Link Source="o0" Target="o1" Category="Operand" />
+    <Link Source="o0" Target="o2" Category="Operand" />
+  </Links>
+</DirectedGraph>

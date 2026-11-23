@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="b0" Category="BasicBlock" Bounds="0,560,71.5533333333333,25.96" Label="ENTRY B0" />
+    <Node Id="b1" Category="BasicBlock" Bounds="101.553333333333,784,59.2633333333333,25.96" Label="EXIT B1" />
+    <Node Id="o0" Category="Operation" Bounds="106.185,728,50,25.96" Label="CALL" />
+    <Node Id="o1" Category="Operation" Bounds="197.595,840,117.86,25.96" Label="IDENTIFIER: empty" />
+    <Node Id="o10" Category="Operation" Bounds="208.796666666667,448,95.4566666666667,25.96" Label="STRING: &quot;text&quot;" />
+    <Node Id="o11" Category="Operation" Bounds="106.185,336,50,25.96" Label="CALL" />
+    <Node Id="o12" Category="Operation" Bounds="203.255,392,106.54,25.96" Label="IDENTIFIER: sum" />
+    <Node Id="o13" Category="Operation" Bounds="219.29,336,74.47,25.96" Label="BINARY: +" />
+    <Node Id="o14" Category="Operation" Bounds="400.29,448,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o15" Category="Operation" Bounds="400.29,392,54.27,25.96" Label="DEC: 2" />
+    <Node Id="o16" Category="Operation" Bounds="220.893333333333,280,71.2633333333333,25.96" Label="BINARY: *" />
+    <Node Id="o17" Category="Operation" Bounds="400.29,336,54.27,25.96" Label="DEC: 3" />
+    <Node Id="o18" Category="Operation" Bounds="400.29,280,54.27,25.96" Label="DEC: 4" />
+    <Node Id="o19" Category="Operation" Bounds="106.185,168,50,25.96" Label="CALL" />
+    <Node Id="o2" Category="Operation" Bounds="106.185,672,50,25.96" Label="CALL" />
+    <Node Id="o20" Category="Operation" Bounds="200.196666666666,224,112.656666666667,25.96" Label="IDENTIFIER: outer" />
+    <Node Id="o21" Category="Operation" Bounds="231.525,168,50,25.96" Label="CALL" />
+    <Node Id="o22" Category="Operation" Bounds="371.796666666667,224,111.256666666667,25.96" Label="IDENTIFIER: inner" />
+    <Node Id="o23" Category="Operation" Bounds="400.29,168,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o24" Category="Operation" Bounds="231.525,112,50,25.96" Label="CALL" />
+    <Node Id="o25" Category="Operation" Bounds="371.796666666667,112,111.256666666667,25.96" Label="IDENTIFIER: inner" />
+    <Node Id="o26" Category="Operation" Bounds="400.29,56,54.27,25.96" Label="DEC: 2" />
+    <Node Id="o27" Category="Operation" Bounds="106.185,56.0000000000001,50,25.96" Label="CALL" />
+    <Node Id="o28" Category="Operation" Bounds="231.525,56.0000000000001,50,25.96" Label="CALL" />
+    <Node Id="o29" Category="Operation" Bounds="352.233333333333,2.8421709430404E-14,150.383333333333,25.96" Label="IDENTIFIER: get_function" />
+    <Node Id="o3" Category="Operation" Bounds="190.816666666667,784,131.416666666667,25.96" Label="IDENTIFIER: no_types" />
+    <Node Id="o30" Category="Operation" Bounds="229.39,5.6843418860808E-14,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o4" Category="Operation" Bounds="229.39,728,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o5" Category="Operation" Bounds="229.39,672,54.27,25.96" Label="DEC: 2" />
+    <Node Id="o6" Category="Operation" Bounds="106.185,560,50,25.96" Label="CALL" />
+    <Node Id="o7" Category="Operation" Bounds="199.23,616,114.59,25.96" Label="IDENTIFIER: typed" />
+    <Node Id="o8" Category="Operation" Bounds="229.39,560,54.27,25.96" Label="DEC: 1" />
+    <Node Id="o9" Category="Operation" Bounds="229.39,504,54.27,25.96" Label="DEC: 2" />
+  </Nodes>
+  <Links>
+    <Link Source="b0" Target="b1" Category="Control" Bounds="40.1986503601074,585.960021972656,74.6223487854004,191.083251953125" />
+    <Link Source="b0" Target="o0" Category="Contains" Bounds="42.7769355773926,585.960021972656,74.9902992248535,134.50830078125" />
+    <Link Source="b0" Target="o11" Category="Contains" Bounds="41.3052406311035,370.240203857422,80.8243980407715,189.759796142578" />
+    <Link Source="b0" Target="o19" Category="Contains" Bounds="38.9358520507813,202.704711914063,86.9616012573242,357.295288085938" />
+    <Link Source="b0" Target="o2" Category="Contains" Bounds="46.833812713623,585.960021972656,67.4578132629395,79.1888427734375" />
+    <Link Source="b0" Target="o27" Category="Contains" Bounds="37.7657318115234,90.4806976318359,86.1068878173828,469.519302368164" />
+    <Link Source="b0" Target="o6" Category="Contains" Bounds="71.553337097168,572.97998046875,25.6316604614258,0" />
+    <Link Source="o0" Target="o1" Category="Operand" Bounds="141.640853881836,753.960021972656,76.8689575195313,82.4413452148438" />
+    <Link Source="o11" Target="o12" Category="Operand" Bounds="155.977310180664,360.056823730469,63.2785186767578,28.2718811035156" />
+    <Link Source="o11" Target="o13" Category="Operand" Bounds="156.184997558594,348.980010986328,54.1049957275391,0" />
+    <Link Source="o11" Target="o16" Category="Operand" Bounds="155.977310180664,309.631286621094,63.2785186767578,28.2718811035156" />
+    <Link Source="o13" Target="o14" Category="Operand" Bounds="276.331085205078,361.959991455078,123.760314941406,81.1068115234375" />
+    <Link Source="o13" Target="o15" Category="Operand" Bounds="293.016143798828,360.937316894531,98.7213134765625,32.3486938476563" />
+    <Link Source="o16" Target="o17" Category="Operand" Bounds="291.723052978516,304.513580322266,100.014404296875,32.7724304199219" />
+    <Link Source="o16" Target="o18" Category="Operand" Bounds="292.156677246094,292.980010986328,99.1333312988281,0" />
+    <Link Source="o19" Target="o20" Category="Operand" Bounds="155.977310180664,192.056823730469,63.2785186767578,28.2718811035156" />
+    <Link Source="o19" Target="o21" Category="Operand" Bounds="156.184997558594,180.979995727539,66.3399963378906,0" />
+    <Link Source="o19" Target="o24" Category="Operand" Bounds="155.977310180664,139.728118896484,67.5382385253906,30.1750640869141" />
+    <Link Source="o2" Target="o3" Category="Operand" Bounds="145.711013793945,697.960021972656,89.5769195556641,80.0431518554688" />
+    <Link Source="o2" Target="o4" Category="Operand" Bounds="155.977310180664,696.056823730469,65.8386993408203,29.4157104492188" />
+    <Link Source="o2" Target="o5" Category="Operand" Bounds="156.184997558594,684.97998046875,64.2050018310547,0" />
+    <Link Source="o21" Target="o22" Category="Operand" Bounds="281.524993896484,189.171920776367,97.7352905273438,32.0256042480469" />
+    <Link Source="o21" Target="o23" Category="Operand" Bounds="281.524993896484,180.979995727539,109.765014648438,0" />
+    <Link Source="o24" Target="o25" Category="Operand" Bounds="281.524993896484,124.980003356934,81.2716674804688,0" />
+    <Link Source="o24" Target="o26" Category="Operand" Bounds="281.524993896484,80.6739883422852,110.212463378906,36.1140899658203" />
+    <Link Source="o27" Target="o28" Category="Operand" Bounds="156.184997558594,68.9800033569336,66.3399963378906,0" />
+    <Link Source="o27" Target="o30" Category="Operand" Bounds="155.977310180664,28.4874477386475,65.8386993408203,29.4157276153564" />
+    <Link Source="o28" Target="o29" Category="Operand" Bounds="281.524993896484,28.7624740600586,97.7352905273438,32.0256004333496" />
+    <Link Source="o6" Target="o10" Category="Operand" Bounds="145.711013793945,479.956787109375,89.5769195556641,80.043212890625" />
+    <Link Source="o6" Target="o7" Category="Operand" Bounds="155.977310180664,584.056823730469,63.2785186767578,28.2718505859375" />
+    <Link Source="o6" Target="o8" Category="Operand" Bounds="156.184997558594,572.97998046875,64.2050018310547,0" />
+    <Link Source="o6" Target="o9" Category="Operand" Bounds="155.977310180664,532.487426757813,65.8386993408203,29.415771484375" />
+  </Links>
+  <Categories>
+    <Category Id="BasicBlock" />
+    <Category Id="Contains" Label="Содержит" Description="Указывает, содержит ли источник связи целевой объект" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Содержится в" IsContainment="True" OutgoingActionLabel="Содержит" />
+    <Category Id="Control" />
+    <Category Id="Operand" />
+    <Category Id="Operation" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="Метка" Description="Отображаемая метка аннотируемого объекта" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

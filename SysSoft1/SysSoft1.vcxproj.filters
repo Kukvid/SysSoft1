@@ -13,6 +13,15 @@
     <Filter Include="include">
       <UniqueIdentifier>{4c133ba5-ae82-4962-be97-d0646badc760}</UniqueIdentifier>
     </Filter>
+    <Filter Include="filter\tests">
+      <UniqueIdentifier>{6f247e91-de46-4a31-9987-74a800424a03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filter\tests\lab2">
+      <UniqueIdentifier>{c591b47b-4aef-4a84-a48d-0176f990651f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filter\tests\lab2\build">
+      <UniqueIdentifier>{7b1a27cb-9049-4019-b6cd-25bd475c5a71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ast.h">
@@ -24,6 +33,18 @@
     <ClInclude Include="include\dgml.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\analysis.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfg_dgml.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opstree.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
@@ -33,8 +54,65 @@
     <None Include="grammar\lexer.l">
       <Filter>grammar</Filter>
     </None>
+    <None Include="tests\lab2\build\callgraph.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.all_types.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.blocks.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.calls.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.combined.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.conditions.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.empty.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.expressions.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.helper.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.literals.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.loops.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.nested.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.no_types.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.repetitions.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.slices.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\full_test.typed.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
     <None Include="tests\full_test.dgml">
-      <Filter>filter</Filter>
+      <Filter>filter\tests\lab2</Filter>
+    </None>
+    <None Include="tests\lab2\build\file1.main.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\file2.helper.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
+    </None>
+    <None Include="tests\lab2\build\test_branches.main.dgml">
+      <Filter>filter\tests\lab2\build</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -48,13 +126,65 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="Main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="tests\full_test.txt">
-      <Filter>filter</Filter>
-    </Text>
+    <ClCompile Include="src\analysis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfg_dgml.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CfgMain.c" />
+    <ClCompile Include="src\opstree.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xsd Include="help.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="tests\full_test.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\break_error.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\calls_a.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\calls_b.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\invalid.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\location_test.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\scopes.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\short_circuit.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\short_expr.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\two_loops.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\until.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\file1.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\file2.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
+    <Text Include="tests\test_branches.txt">
+      <Filter>filter\tests</Filter>
+    </Text>
   </ItemGroup>
 </Project>
